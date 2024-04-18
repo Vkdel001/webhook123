@@ -9,7 +9,9 @@ app.post('/webhooked', (req, res) => {
      
     res.status(200).send('Webhook received!');  
 });
-
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
 app.get('/webhooked', (req, res) => {
     res.send('<h1>Welcome to the  Page!</h1><p>This is a simple page.</p>');
 });
